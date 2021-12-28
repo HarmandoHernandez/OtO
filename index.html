@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OtO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap&text=Ot"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./src/view-pdf/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./src/filter-switch/style.css" />
+    <link rel="icon" type="image/png" href="./assets/imgs/OtO.png" />
+  </head>
+  <body class="body">
+    <span class="background"></span>
+    <main class="main" id="main">
+      <article class="info">
+        <h1 class="info__title">OtO</h1>
+        <p class="info__description">
+          Disfruta de una buena lectura sin malestares visuales. 🤓
+        </p>
+      </article>
+      <article class="resources">
+        <div class="input-pdf">
+          <div class="input-pdf__drag" id="pdf-drag">
+            <img
+              class="input-pdf__img"
+              src="./assets/imgs/pdf.png"
+              alt="pdf icon"
+            />
+            <span id="pdf-description" class="input-pdf__description">
+              Elija un PDF o arrástrelo aquí.
+            </span>
+            <input type="file" accept="application/pdf" id="pdf-input" hidden />
+          </div>
+        </div>
+        <a href="#view-resource" class="resources__btn-go" id="btn-go">
+          <img
+            src="./assets/imgs/right-arrow.png"
+            alt="Go"
+            width="20px"
+            height="20px"
+          />
+        </a>
+        <div class="errors" id="errors"></div>
+      </article>
+    </main>
+
+    <article class="view-resource" id="view-resource">
+      <span class="filter filter--active" id="filter"></span>
+      <input
+        type="range"
+        name="width"
+        id="width"
+        min="5"
+        max="95"
+        step="1"
+        class="filter__size filter__size--width filter__size--active"
+      />
+
+      <input
+        type="range"
+        name="height"
+        id="height"
+        min="5"
+        max="95"
+        step="1"
+        class="filter__size filter__size--height filter__size--active"
+      />
+      <a href="#main" class="btn__to-main">
+        <img
+          src="./assets/imgs/right-arrow.png"
+          alt="Go"
+          width="20px"
+          height="20px"
+        />
+      </a>
+      <label class="filter__switch">
+        <input type="checkbox" checked id="filter__switch" hidden />
+        <span class="slider"></span>
+      </label>
+      <embed type="application/pdf" data="" id="display-resource" class="pdf" />
+    </article>
+
+    <script src="main.js"></script>
+    <script src="./src/view-pdf/main.js"></script>
+  </body>
+</html>

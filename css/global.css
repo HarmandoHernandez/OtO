@@ -1,0 +1,19 @@
+:root {
+  --filter: rgba(51, 51, 51, 0.9);
+  --pale-gold: #c0b283;
+  --silk: #dcd0c0;
+  --paper: #f4f4f4;
+  --charcoal: #373737;
+  --dark-purple: #1c144c;
+  --error-color: #da888f;
+
+  --font-family-global: Arial, Helvetica, sans-serif;
+  --font-family-title: "Rubik", sans-serif;
+  --font-size-title: 8em;
+  --font-size-body: 1.25em;
+  --font-size-caption: 1em;
+}
+
+html {
+  scroll-behavior: smooth;
+}

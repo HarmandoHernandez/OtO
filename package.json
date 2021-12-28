@@ -1,0 +1,15 @@
+{
+  "name": "oto",
+  "version": "1.0.0",
+  "description": "Herramienta para lecturas sin malestares visuales",
+  "main": "main.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
