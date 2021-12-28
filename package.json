@@ -4,7 +4,7 @@
   "description": "Herramienta para lecturas sin malestares visuales",
   "main": "main.js",
   "scripts": {
-    "test": ""
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "",
