@@ -1,0 +1,44 @@
+.filter__switch {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  transition: opacity 0.3s;
+  z-index: 99;
+  opacity: 0.5;
+}
+
+.filter__switch:hover {
+  opacity: 1;
+}
+
+.slider {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background-color: var(--charcoal);
+  transition: 0.4s;
+  width: 54px;
+  height: 33px;
+  border-radius: 6px;
+  z-index: 99;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  background-color: var(--pale-gold);
+  transition: 0.4s;
+  top: 3px;
+  left: 3px;
+  border-radius: 6px;
+}
+
+input:checked + .slider {
+  background-color: var(--silk);
+}
+
+input:checked + .slider:before {
+  transform: translateX(21px);
+}
